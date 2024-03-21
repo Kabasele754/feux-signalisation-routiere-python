@@ -54,7 +54,8 @@ while True:
 
 ## interface  graphique  kivy
 
-[feux de signalisation.mp4](feux%20de%20signalisation.mp4)
+![feuxdesignalisation-ezgif.com-video-to-gif-converter.gif](feuxdesignalisation-ezgif.com-video-to-gif-converter.gif)
+
 ## Contributions
 
 Les contributions sont les bienvenues ! Si vous avez des idées d'amélioration ou si vous avez trouvé des bogues, n'hésitez pas à ouvrir une issue ou à proposer une demande d'extraction.
