@@ -47,3 +47,12 @@ while True:
         print("Feu rouge - Arrêt obligatoire")
         time.sleep(DUREE_ROUGE)
         etat_feux = "vert"
+```
+
+## Contributions
+
+Les contributions sont les bienvenues ! Si vous avez des idées d'amélioration ou si vous avez trouvé des bogues, n'hésitez pas à ouvrir une issue ou à proposer une demande d'extraction.
+
+## Auteur
+
+Ce projet a été réalisé par [Achille kabasele](https://github.com/Kabasele754/).
