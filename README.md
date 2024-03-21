@@ -1,6 +1,6 @@
 # Feux de signalisation routière
 
-Ce projet est une simulation simple d'un système de feux de signalisation routière en Python.
+Ce projet est une simulation simple d'un système de feux de signalisation en utilisant le framework Kivy en Python.
 
 ## Fonctionnalités
 
@@ -8,10 +8,13 @@ Ce projet est une simulation simple d'un système de feux de signalisation routi
 - Utilise la bibliothèque `time` pour contrôler la durée de chaque état des feux.
 - Modularité améliorée avec des fonctions pour afficher l'état des feux et changer leur état.
 - Gestion de l'arrêt du programme avec une interruption clavier (Ctrl+C).
+- Simule le fonctionnement des feux de signalisation (vert, orange, rouge).
+- Utilise le module `kivy.graphics` pour dessiner les feux de signalisation.
+- Utilise la classe `Clock` de Kivy pour changer automatiquement la couleur des feux à intervalles réguliers.
 
 ## Utilisation
 
-1. Assurez-vous d'avoir Python installé sur votre système.
+1. Assurez-vous d'avoir Python et Kivy installés sur votre système.
 2. Clonez ce dépôt sur votre machine locale.
 3. Exécutez le fichier `feux_de_signalisation.py` pour démarrer la simulation des feux de signalisation.
 
@@ -49,6 +52,10 @@ while True:
         etat_feux = "vert"
 ```
 
+## interface  graphique  kivy
+
+
+
 ## Contributions
 
 Les contributions sont les bienvenues ! Si vous avez des idées d'amélioration ou si vous avez trouvé des bogues, n'hésitez pas à ouvrir une issue ou à proposer une demande d'extraction.
@@ -56,3 +63,8 @@ Les contributions sont les bienvenues ! Si vous avez des idées d'amélioration 
 ## Auteur
 
 Ce projet a été réalisé par [Achille kabasele](https://github.com/Kabasele754/).
+
+
+
+
+
