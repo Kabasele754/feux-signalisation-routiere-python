@@ -22,11 +22,11 @@ pygame.display.set_caption("Simulation de feu de signalisation")
 screen.fill((60, 220, 0))
 
 # Chargement des images des véhicules
-car = pygame.image.load("trafic_routier/car.png")
+car = pygame.image.load("car.png")
 car_loc = car.get_rect()
 car_loc.center = right_lane, height * 0.8
 
-car2 = pygame.image.load("trafic_routier/otherCar.png")
+car2 = pygame.image.load("otherCar.png")
 car2_loc = car2.get_rect()
 car2_loc.center = left_lane, height * 0.2
 

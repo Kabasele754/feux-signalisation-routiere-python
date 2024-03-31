@@ -19,11 +19,11 @@ pygame.display.set_caption("Simulation de trafic routier")
 screen.fill((60, 220, 0))
 
 # Chargement des images des véhicules
-car = pygame.image.load("trafic_routier/car.png")
+car = pygame.image.load("car.png")
 car_loc = car.get_rect()
 car_loc.center = width / 1.5, height * 0.5
 
-car2 = pygame.image.load("trafic_routier/otherCar.png")
+car2 = pygame.image.load("otherCar.png")
 car2_loc = car2.get_rect()
 car2_loc.center = width / 1.5 - road_w / 1.5, height * 0.5
 

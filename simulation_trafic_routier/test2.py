@@ -19,13 +19,17 @@ pygame.display.set_caption("Simulation de trafic routier")
 screen.fill((60, 220, 0))
 
 # Chargement des images des véhicules
-car = pygame.image.load("trafic_routier/car.png")
+car = pygame.image.load("car.png")
 car_loc = car.get_rect()
 car_loc.center = width / 1.5, height * 0.5
 
-car2 = pygame.image.load("trafic_routier/otherCar.png")
+car2 = pygame.image.load("otherCar.png")
 car2_loc = car2.get_rect()
 car2_loc.center = width / 1.5 - road_w / 1.5, height * 0.5
+
+car3 = pygame.image.load("otherCar.png")
+car3_loc = car3.get_rect()
+car3_loc.center = width / 1.5 + road_w / 2, -200
 
 # Paramètres du feu de signalisation
 traffic_light_state = "green"
@@ -62,8 +66,14 @@ while running:
     if car_loc[1] < -200:  # Si la voiture sort de l'écran vers le haut
         car_loc.center = width / 1.5, height  # Réinitialisation de la position en bas de l'écran
 
+    # Animation des véhicules 3 (en sens inverse)
+    if traffic_light_state == "green":
+        car3_loc[1] += speed
+    if car3_loc[1] > height:
+        car3_loc.center = width / 1.5 + road_w / 2, -200
+
     # Logique de fin de jeu
-    if car_loc.colliderect(car2_loc):
+    if car_loc.colliderect(car2_loc) or car_loc.colliderect(car3_loc) or car2_loc.colliderect(car3_loc):
         print("GAME OVER! YOU LOST!")
         break
 
@@ -112,6 +122,7 @@ while running:
     # Affichage des véhicules
     screen.blit(car, car_loc)
     screen.blit(car2, car2_loc)
+    screen.blit(car3, car3_loc)
 
     pygame.display.update()
 

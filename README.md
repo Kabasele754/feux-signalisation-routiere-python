@@ -12,59 +12,19 @@ Ce projet est une simulation simple d'un système de feux de signalisation en ut
 - Utilise le module `kivy.graphics` pour dessiner les feux de signalisation.
 - Utilise la classe `Clock` de Kivy pour changer automatiquement la couleur des feux à intervalles réguliers.
 
-## Utilisation
 
-1. Assurez-vous d'avoir Python et Kivy installés sur votre système.
-2. Clonez ce dépôt sur votre machine locale.
-3. Exécutez le fichier `feux_de_signalisation.py` pour démarrer la simulation des feux de signalisation.
+# Simulation de trafic routier avec Pygame
 
-## Explication de `import time`
+Ce projet est une simulation de trafic routier basée sur Pygame, une bibliothèque Python largement utilisée pour le développement de jeux et d'applications multimédias interactives. L'objectif de ce projet est de démontrer les concepts de base de la programmation de jeux et de simuler un environnement de circulation routière simple.
 
-Dans ce projet, nous utilisons la bibliothèque standard `time` en important le module `time`. Cette bibliothèque fournit différentes fonctions liées au temps, notamment `time.sleep()`. Cette fonction est utilisée pour suspendre l'exécution du programme pendant un certain nombre de secondes, ce qui nous permet de contrôler la durée de chaque état des feux de signalisation.
+## Fonctionnalités
 
-## Code
+- Simulation de véhicules se déplaçant dans un environnement routier.
+- Feux de signalisation avec changements d'état (vert, jaune, rouge).
+- Gestion des collisions entre véhicules.
 
-Voici le code utilisé pour simuler les feux de signalisation :
+## Prérequis
 
-```python
-import time
-
-# Définition des durées pour chaque état des feux
-DUREE_VERTE = 5
-DUREE_ORANGE = 2
-DUREE_ROUGE = 5
-
-# Initialisation de l'état initial des feux
-etat_feux = "vert"
-
-while True:
-    if etat_feux == "vert":
-        print("Feu vert - Passage autorisé")
-        time.sleep(DUREE_VERTE)
-        etat_feux = "orange"
-    elif etat_feux == "orange":
-        print("Feu orange - Attention, le feu va passer au rouge")
-        time.sleep(DUREE_ORANGE)
-        etat_feux = "rouge"
-    elif etat_feux == "rouge":
-        print("Feu rouge - Arrêt obligatoire")
-        time.sleep(DUREE_ROUGE)
-        etat_feux = "vert"
-```
-
-## interface  graphique  kivy
-
-![feuxdesignalisation-ezgif.com-video-to-gif-converter.gif](feuxdesignalisation-ezgif.com-video-to-gif-converter.gif)
-
-## Contributions
-
-Les contributions sont les bienvenues ! Si vous avez des idées d'amélioration ou si vous avez trouvé des bogues, n'hésitez pas à ouvrir une issue ou à proposer une demande d'extraction.
-
-## Auteur
-
-Ce projet a été réalisé par [Achille kabasele](https://github.com/Kabasele754/).
-
-
-
-
+- Python 3.x
+- Pygame (installable via `pip install pygame`)
 
